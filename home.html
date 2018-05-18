@@ -7,18 +7,25 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- <link rel="stylesheet" type="text/css" href="mystylesheet.css"> -->
       
         <title>Zoref Home</title>
+
+        <style href="./mystylesheet.css">
+        </style>
+
     </head>
     <body>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Graphics</li>
-                <li>Portfolio</li>
-                <li>About Me</li>
-            </ul>
-        </nav>
+        <header>
+                <nav>
+                        <span class="movetext">Company Name</span>
+                        <img class="" src="https://www.matchbook.com/assets/images/icons/white/Twitter_logo_white.png">
+                        <a href="#portion1" class="active">Portion1</a>
+                        <a href="#portion2">Portion2</a>
+                        <a href="#portion3">Portion3</a>
+                        <a href="#portion4">Portion4</a>
+                      </nav>
+        </header>
         <div class="jumbotron">
             <h6>Welcome to my porfolio</h6>
         </div>
@@ -31,4 +38,53 @@
 
         
     </body>
+    <script>
+        // Smooth Scroll on clicking nav items
+$('nav a').click(function () {
+  var $href = $(this).attr('href');
+  $('body').stop().animate({
+    scrollTop: $($href).offset().top
+  }, 1000);
+  return false;
+});
+
+// back to top
+$('#toTop a').click(function () {
+  $('body').animate({
+    scrollTop: 0
+  }, 1000);
+  return false;
+});
+
+// Parallaxing + add class active on scroll
+$(document).scroll(function () {
+  
+  // parallaxing
+  var $movebg = $(window).scrollTop() * -0.3;
+  $('.portion').css('background-positionY', ($movebg) + 'px');
+
+  // add class active to nav a on scroll
+  var scrollPos = $(document).scrollTop() + 100;
+  $('nav a').each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+      $('nav a').removeClass("active");
+      currLink.addClass("active");
+    }
+  });
+  
+  // changing padding of nav a on scroll
+    if (scrollPos > 250) {
+      $('nav a').addClass('small');
+      $('nav img').addClass('move');
+      $('nav span').removeClass('movetext');
+    } else {
+      $('nav a').removeClass('small');
+      $('nav img').removeClass('move');
+      $('nav span').addClass('movetext');
+    }
+  
+});
+    </script>
 </html>
