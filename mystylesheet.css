@@ -7,7 +7,7 @@ body {
   
   header nav {
     text-align: right;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0);
     color: white;
     font-size: 1em;
     position: fixed;
@@ -23,30 +23,34 @@ body {
   .small {
     padding: .5em 1em;
   }
+  .mynav{
+    background: black;
+  }
   header nav a:hover {
     text-decoration: underline;
   }
   
   .active {
     background: rgba(255,255,255,0.3);
+    color:rgb(0, 255, 217);
   }
   
   .portion {
     
-    background-image:  url('http://p1.pichost.me/640/60/1842352.jpg');
+    background-image:  url('developer.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
   }
   .portion.two {
-    background-image: url('http://cdn.desktopwallpapers4.me/media/thumbs_400x250/4/31677.jpg');
+    background-image: url('portion1.jpeg');
   }
   .portion h2 {
     color: white;
     font-weight: normal;
     font-size: 3em;
-    padding: 2em 0;
+    padding: 5em 0;
     margin: 0;
     text-shadow: 0 0 10px black;
     background: rgba(0,0,0,0.6);
