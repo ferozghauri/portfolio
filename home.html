@@ -20,21 +20,23 @@
                 <nav>
                         <span class="movetext">Zoref Labs</span>
                         <img class="" src="https://i.pinimg.com/originals/e8/7a/fb/e87afb485ae35f89aceef01bc65ff1c0.png">
-                        <a href="#portion1" class="active">Home</a>
+                        <a href="#portion1" >Home</a>
                         <a href="#portion2">Portfolio</a>
                         <a href="#portion3">My Clients</a>
                         <a href="#portion4">Contact</a>
                       </nav>
         </header>
         <div class="portion">
-                <h2>Portion 1.</h2>
+                <h2>there is art and there is design</h2>
+                <h3>we know the difference</h3>
               </div>
               
               <div id="portion1" class="info">
-                <h3>Heading for Portion 1</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nobis ut dicta quisquam officia deleniti, amet. Obcaecati atque, cumque quae culpa ad hic commodi provident pariatur, iure nobis voluptatibus laborum amet temporibus quia, dolores veritatis, repellendus consectetur. Ut ullam officiis minus quod assumenda facere quaerat, esse, magni, aliquid culpa vero.</p>
-                <div class="button">
-                  <a href="#">Example Button</a>
+                <div class="container">
+                  <div class="row"><h2>About me</h2></div>
+                  
+                  <div class="col-xs-6">I am column 1</div>
+                  <div class="col-xs-6">I am column 2</div>
                 </div>
               </div>
               
@@ -118,10 +120,12 @@ $(document).scroll(function () {
   
   // changing padding of nav a on scroll
     if (scrollPos > 250) {
+      $('nav').css({"background": "black"});
       $('nav a').addClass('small');
       $('nav img').addClass('move');
       $('nav span').removeClass('movetext');
     } else {
+      $('nav').css({"background": "rgba(0,0,0,0)"});
       $('nav a').removeClass('small');
       $('nav img').removeClass('move');
       $('nav span').addClass('movetext');
