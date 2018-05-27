@@ -56,11 +56,15 @@ body {
     text-align: center;
 
   }
-  .landing h2{
-  padding-top: 10em;
-  color  : blue;
+  .portion .landing h2{
+  padding-top: 5em;
+  padding-bottom: 0;
+  color  : white;
   }
-  
+  .portion .landing h3{
+    padding-bottom: 12em;
+    color  : white;
+    }
   .info {
     background: #FFFAF0;
     color: #777;
@@ -124,3 +128,41 @@ body {
   .movetext {
     top: -30px;
   }
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("homepage.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#homepage h1{
+  color: white;
+  font-size: 48px;
+  transition: all .2s ease-out;
+}
+#homepage h1:hover{
+  transform: scale(1.1);
+}
+#homepage h4{
+  color: white;
+  font-weight: 100;
+}
+#homepage_designer{
+  text-align: right;
+}
+#homepage_coder{
+  text-align: left;
+}
+landing row{
+  text-align: center;
+}
