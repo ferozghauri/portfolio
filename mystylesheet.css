@@ -53,8 +53,7 @@ body {
   }
   .portion.two {
     /* background-image: url('portion1.jpeg'); */
-    background: linear-gradient(to bottom right, red, yellow);
-    top: -40;
+     background-color: rgb(23, 216, 171);
   }
   .portion h2 {
     color: white;
@@ -82,7 +81,7 @@ body {
   .info {
     background: black;
     color:white;
-    padding: 3em 20%;
+    text-align: left;
   }
   
   .button {
@@ -167,6 +166,7 @@ body {
 }
 #homepage h1:hover{
   transform: scale(1.1);
+  color: aquamarine;
 }
 #homepage h4{
   color: white;
@@ -221,13 +221,13 @@ landing row{
 }
 .post-f{
   position: absolute;
-  color: blue;
+  color:white;
   font-size: 20px;
   z-index: 100;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.252);
+  background-color: rgba(0, 0, 0, 0.511);
   top: 0;
   width: 323px;
   height: 200px;
@@ -250,7 +250,7 @@ landing row{
 .post-s{
   width: 0px;
   height: 200px;
-  background: rgba(103, 58, 183, 0.71);
+  background: rgba(0, 255, 238, 0.71);
   position: absolute;
   top: 0;
   display: flex;
@@ -264,4 +264,83 @@ landing row{
   font-size: 50px;
   border: 6px solid white;
   padding: 10px 30px;
+}
+
+
+
+
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: white;
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+#Testimonials .active{
+  background: rgba(0,0,0,0);
 }
