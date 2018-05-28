@@ -15,11 +15,12 @@ body {
   
   header nav {
     text-align: center;
-    background: rgba(0,0,0,0);
+    background:yellow;
     color: white;
     font-size: 1em;
     position: fixed;
     width: 100%;
+    z-index: 999;
   }
   header nav a {
     color: inherit;
@@ -42,7 +43,7 @@ body {
   
   .portion {
     
-    background-color: #282828;
+    background-image: url('darkwala.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -51,7 +52,9 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 91%, 0 100%);
   }
   .portion.two {
-    background-image: url('portion1.jpeg');
+    /* background-image: url('portion1.jpeg'); */
+    background: linear-gradient(to bottom right, red, yellow);
+    top: -40;
   }
   .portion h2 {
     color: white;
@@ -186,6 +189,7 @@ landing row{
 }
 .landing img{
   max-width: 100%;
+
 }
 #myname{
   text-align: center;
@@ -206,18 +210,58 @@ landing row{
   transform: scale(1.1);
   background-color: black;
 }
-#portfolio img{
-  max-width: 100%;
-  max-height: 100%;
-  background-size: cover;
-  transition: all .5s ease-in-out;
-}
-#portfolio img:hover{
-  transform: scale(1.5);
 
-}
-#portfolio .col-xs-4{
-  width: 300px;
-  height: 150px;
 
+
+.post{
+  width: 323px;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.post-f{
+  position: absolute;
+  color: blue;
+  font-size: 20px;
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.252);
+  top: 0;
+  width: 323px;
+  height: 200px;
+  display: flex;
+}
+.post:hover .post-s{
+  width: 323px;
+}
+.post:hover .post-f{
+  display: none;
+  transition: 0.4 ease;
+}
+.post img {
+  display: block;
+  width: 323px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center center;
+}
+.post-s{
+  width: 0px;
+  height: 200px;
+  background: rgba(103, 58, 183, 0.71);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.post-s h2{
+  color: white;
+  font-size: 50px;
+  border: 6px solid white;
+  padding: 10px 30px;
 }
