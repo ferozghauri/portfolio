@@ -1,0 +1,219 @@
+/* @font-face {
+  font-family: "Oswald";
+  src: url("font/Oswald-Bold.ttf");
+  src: url("font/Oswald-Light.ttf");
+  src: url("font/Oswald-Medium.ttf");
+  src: url("font/Oswald-Heavy.ttf");
+  } */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald';
+    font-size: 20px;
+    background-color: white;
+  }
+  
+  header nav {
+    text-align: right;
+    background:white;
+    color: black;
+    font-size: 1em;
+    font-weight: 200;
+    position: fixed;
+    margin-top: -30px;
+    width: 100%;
+    z-index: 999;
+  }
+  header nav a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2em 1em .5em;
+    -webkit-transition: all .3s ease-in;
+  }
+  #homepage h6{
+    color: black;
+  }
+  .small {
+    padding: .5em 1em;
+  }
+  header nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    background: rgba(255,255,255,0.3);
+    color:rgb(0, 255, 217);
+  }
+  
+  .portion {
+    
+    background-image: url('darkwala.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    color: black;
+  }
+  .portion.two {
+    /* background-image: url('portion1.jpeg'); */
+     background-color: rgb(23, 216, 171);
+  }
+  .portion h2 {
+    color: black;
+    font-weight: normal;
+    font-size: 3em;
+    padding: 5em 0;
+    margin: 0;
+    text-shadow: 0 0 10px white;
+    background: rgba(0,0,0,0);
+  }
+
+  .portion .landing h2{
+  padding-top: 5em;
+  padding-bottom: 0;
+  color  : black;
+  }
+
+  .info {
+    background: white;
+    color:black;
+    text-align: left;
+  }
+  
+  .button {
+    text-align: center;
+  }
+  .button a {
+    display: inline-block;
+    border: 1.5px solid black;
+    padding: .75em 1.5em;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+    word-spacing: .25em;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  .button a:hover {
+    color: white;
+    background:black;
+  }
+  footer.info {
+    color: #FFFAF0;
+    background: #777;
+    padding: 0 auto;
+    text-align: center;
+  }
+  
+  #toTop img {
+    width: 50px;
+  }
+  #toTop img:hover {
+    cursor: pointer;
+  }
+  nav img {
+    z-index: 1000;
+    height: 2.5em;
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    transition: all 0.5s linear;
+  }
+  
+  .move {
+    top: -60px;
+  }
+  
+  nav span {
+    position: absolute;
+    left: 40px;
+    font-weight: bold;
+    transition: all 0.5s ease-in;
+  }
+  
+  .movetext {
+    top: -30px;
+  }
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+#Contact{
+  text-align: center;
+}
+#Contact p{
+  font-size: 18px;
+  font-weight: 100;
+}
+#Contact h3{
+  text-transform: uppercase;
+}
+#Contact h4{
+  color: #0375B4;
+  font-weight: 200;
+  font-size: 22px;
+  display: inline-block;
+    border: 1.5px solid black;
+    padding: .75em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    word-spacing: .25em;
+    transition: all 0.3s ease-in-out;
+}
+
+footer{
+  text-align: center;
+  background-image: url("footer2.jpg");
+ color: black;
+ font-weight: 400;
+ font-size:17px;
+ font-family: 'Rajdhani', sans-serif;
+}
+footer p{
+  font-weight: 200;
+  font-size: 18px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: rgba(255, 255,255, .5);
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+footer .container{
+  text-align: left;
+}
+footer h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+ color: blue;
+}
+.fa-behance{
+  color:lightblue;
+}
+#followme{
+  text-align: right;
+}
