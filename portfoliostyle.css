@@ -1,183 +1,93 @@
-/* @font-face {
-  font-family: "Oswald";
-  src: url("font/Oswald-Bold.ttf");
-  src: url("font/Oswald-Light.ttf");
-  src: url("font/Oswald-Medium.ttf");
-  src: url("font/Oswald-Heavy.ttf");
-  } */
-  body {
-    margin: 0;
+
+body{
+  margin: 0;
     padding: 0;
     font-family: 'Oswald';
     font-size: 20px;
-    background-color: white;
-  }
+  background:white;
+}
+.portion{
+  margin-top: 50px;
   
-  header nav {
-    text-align: right;
-    background:white;
-    color: black;
-    font-size: 1em;
-    font-weight: 200;
-    position: fixed;
-    margin-top: -30px;
-    width: 100%;
-    z-index: 999;
-  }
-  header nav a {
-    color: inherit;
-    text-decoration: none;
-    display: inline-block;
-    padding: 2em 1em .5em;
-    -webkit-transition: all .3s ease-in;
-  }
-  #homepage h6{
-    color: black;
-  }
-  .small {
-    padding: .5em 1em;
-  }
-  header nav a:hover {
-    text-decoration: underline;
-  }
-  
-  .active {
-    background: rgba(255,255,255,0.3);
-    color:rgb(0, 255, 217);
-  }
-  
-  .portion {
-    
-    background-image: url('darkwala.jpg');
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-    color: black;
-  }
-  .portion.two {
-    /* background-image: url('portion1.jpeg'); */
-     background-color: rgb(23, 216, 171);
-  }
-  .portion h2 {
-    color: black;
-    font-weight: normal;
-    font-size: 3em;
-    padding: 5em 0;
-    margin: 0;
-    text-shadow: 0 0 10px white;
-    background: rgba(0,0,0,0);
-  }
+}
 
-  .portion .landing h2{
-  padding-top: 5em;
-  padding-bottom: 0;
-  color  : black;
-  }
+/* jfgf */
+a:focus {
+  outline: none;
+}
 
-  .info {
-    background: white;
-    color:black;
-    text-align: left;
-  }
-  
-  .button {
-    text-align: center;
-  }
-  .button a {
-    display: inline-block;
-    border: 1.5px solid black;
-    padding: .75em 1.5em;
-    color: black;
-    text-decoration: none;
-    text-transform: uppercase;
-    border-radius: 5px;
-    word-spacing: .25em;
-    font-size: 15px;
-    transition: all 0.3s ease-in-out;
-  }
-  .button a:hover {
-    color: white;
-    background:black;
-  }
-  footer.info {
-    color: #FFFAF0;
-    background: #777;
-    padding: 0 auto;
-    text-align: center;
-  }
-  
-  #toTop img {
-    width: 50px;
-  }
-  #toTop img:hover {
-    cursor: pointer;
-  }
-  nav img {
-    z-index: 1000;
-    height: 2.5em;
-    position: absolute;
-    left: 40px;
-    top: 10px;
-    transition: all 0.5s linear;
-  }
-  
-  .move {
-    top: -60px;
-  }
-  
-  nav span {
-    position: absolute;
-    left: 40px;
-    font-weight: bold;
-    transition: all 0.5s ease-in;
-  }
-  
-  .movetext {
-    top: -30px;
-  }
-  body, html {
-    height: 100%;
-    margin: 0;
+.portfolioFilter {
+  padding: 15px 0;
+}
+
+.portfolioFilter a {
+  margin-right: 6px;
+  color: #666;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  padding: 4px 15px;
+  border-radius: 50px;
+}
+
+.portfolioFilter a.current {
+  background: #1e1e1e;
+  border: 1px solid #1e1e1e;
+  color: #f9f9f9;
+}
+.portfolioContainer{
+  border: 1px solid #eee;
+  border-radius: 3px;
+}
+img {
+  margin: 5px;
+  max-width:100%;
+}
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  transition-property: transform, opacity;
 }
 
 
-
-
-
-
-
-
-#Contact{
-  text-align: center;
+.portion{
+  position: relative;
 }
-#Contact p{
-  font-size: 18px;
-  font-weight: 100;
-}
-#Contact h3{
-  text-transform: uppercase;
-}
-#Contact h4{
-  color: #0375B4;
-  font-weight: 200;
-  font-size: 22px;
-  display: inline-block;
-    border: 1.5px solid black;
-    padding: .75em 1.5em;
-    text-decoration: none;
-    border-radius: 5px;
-    word-spacing: .25em;
-    transition: all 0.3s ease-in-out;
-}
-
 footer{
+  position: absolute;
   text-align: center;
-  background-image: url("footer2.jpg");
+ background-color: #ececec;
  color: black;
  font-weight: 400;
  font-size:17px;
  font-family: 'Rajdhani', sans-serif;
+ bottom:0;
+ left:0;
+ width:100%;
+ height:100px;
 }
 footer p{
   font-weight: 200;
@@ -208,12 +118,62 @@ footer h3{
     opacity: 0.7;
 }
 
-.fa-facebook {
- color: blue;
+
+.button {
+  text-align: center;
 }
-.fa-behance{
-  color:lightblue;
+.button a {
+  display: inline-block;
+  border: 1.5px solid black;
+  padding: .75em 1.5em;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  word-spacing: .25em;
+  font-size: 15px;
+  transition: all 0.3s ease-in-out;
 }
-#followme{
-  text-align: right;
+.button a:hover {
+  color: white;
+  background:black;
 }
+
+
+
+.post{
+  position: relative;
+  cursor: pointer;
+}
+.post:hover .post-s{
+  width: 202px;
+}
+.post:hover .post-f{
+  display: none;
+  transition: 0.4 ease;
+}
+.post img {
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+}
+.post-s{
+  width: 0px;
+  height: 158px;
+  background: rgba(5, 5, 5, 0);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.7s ease;
+}
+.post-s h2{
+  color: black;
+  font-size: 50px;
+  border: 6px solid black;
+  padding: 10px 30px;
+}
+

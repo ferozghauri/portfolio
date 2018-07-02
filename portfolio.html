@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="portfoliostyle.css">
@@ -15,146 +16,220 @@
         
         </style>
 
+
+
+
     </head>
     <body>
-        <header>
-                <nav>
-                        <img class="" src="https://i.pinimg.com/originals/e8/7a/fb/e87afb485ae35f89aceef01bc65ff1c0.png">
-                        <a href="home.html" >Home</a>
-                        <a href="#portion2" class="active">Portfolio</a>
-                        <!-- <a href="#portion3">My Clients</a> -->
-                        <a href="#portion4">Contact</a>
-                </nav>
-        </header>
-      
-       
-        <div class="portion">
-             <h1>Logo Designs</h1>
-             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </div>
-              
-        <div id="portion1" class="info">
-            <h1>Social media marketing</h1>
-            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        </div>
-              
-        <div class="portion two">
-            <h1>web Designs</h1>
-    
-        </div>
-              
-        <div id="portion2" class="info">
-    
-        </div>
-              
-        <div class="portion">
-
-        </div>
-              
-              <div id="portion3" class="info">
-                <br><br><br>
-                <div class="container" id="Contact">
-
-                    <h3>I am currently available for freelance work.</h3>
-                    <br>
-                    <p>Have a design in mind that you want to bring to reality? or and App that needs to be developed or just want my help? </p>
-                    <p>Just cotact me on my email</p>
-                    <h4>mferozghauri@gmail.com</h4>
-                    <p>or contact me on my number</p>
-                    <h4>+92 334 3733156</h4>
-
-                </div>
-                <br><br><br>
+        <nav class="navbar-fixed-top navbar-default">
+            <div class="container">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Feroz Ghauri</a>
               </div>
-              
-              <!-- <div class="portion two">
-                <h2>Portion 4.</h2>
-              </div> -->
-              
-              <!-- <div id="portion4" class="info">
-                <h3>Heading for Portion 4.</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni incidunt quos iste voluptates, tenetur ad repudiandae ea fuga eveniet quam, unde iure suscipit rem odit in, sint nulla itaque? Labore beatae, est voluptatibus saepe rerum illum repudiandae quasi perspiciatis, molestiae quidem fugiat voluptates voluptate neque totam earum enim mollitia iure quod tempora veritatis quam optio. Error odit laudantium eum voluptate.</p>
-                <div class="button">
-                  <a href="#">Example Button</a>
+              <div>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="home.html">Home</a></li>
+                  <li class="active"><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            </nav><!-- /.navbar -->
+        
+       
+        <div class="container portion">
+             <h1>My Portfolio </h1>
+             <div class="container mainportfolio">
+              <div class="row">
+                <div class="col-lg-12">
+                <div class="portfolioFilter clearfix">
+                  <a href="#" data-filter="*" class="current">All Categories</a>
+                  <a href="#" data-filter=".webTemplates">Web Templates</a>
+                  <a href="#" data-filter=".logos">Logos</a>
+                  <a href="#" data-filter=".drawings">Drawings</a>
+                  <a href="#" data-filter=".ui">UI Elements</a>
+                  <button id="kuuta">my button </button>
                 </div>
-              </div> -->
-              <footer>
-                <br>
-                
-                <div class="container">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <div class="row">
-                          <h3>Contact Information</h3>
-                      </div>
-                      <div class="row">mferozghauri@gmail.com</div>
-                      <div class="row">+92 334 3733156</div>
-                    </div>
-                    <div class="col-xs-6" id="followme">
-                      <div class="row"><h3>Follow Me</h3></div>
-                      <div class="row"><a href="https://www.facebook.com/ferozghauri" class="fa fa-facebook"></a><a href="https://www.behance.net/mferozghaubea4" class="fa fa-behance"></a></div>
-                    </div>
                   </div>
+                  <br><br><br><br>
+                <div class="portfolioContainer">
+            
+                  <div class="webTemplates objects">
+                        <div class="post">
+                          <img src="https://mir-s3-cdn-cf.behance.net/projects/202/8c0ed065826179.Y3JvcCwxNjkzLDEzMjUsMCw1MA.jpg" alt="">
+            
+                          <div class="post-s">
+                              <div class="button">
+                                  <a href="#">VIEW</a>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+            
+                  <div class="drawings places">
+                        <div class="post">
+                          <img src="https://mir-s3-cdn-cf.behance.net/projects/202/b101bb64286563.Y3JvcCwxMTUzLDkwMiwyMTksMA.png" alt="">
+            
+                          <div class="post-s">
+                              <div class="button">
+                                  <a href="#">VIEW</a>
+                              </div>
+                        </div>
+                      </div>
+                  </div>
+            
+                  <div class="webTemplates food">
+                    <div class="post">
+                      <img src="https://mir-s3-cdn-cf.behance.net/projects/202/c4396964286447.Y3JvcCwxMTQ4LDg5OSw2NSw3Nzc.jpg" alt="">
+        
+                      <div class="post-s">
+                          <div class="button">
+                              <a href="#">VIEW</a>
+                          </div>
+                    </div>
+                  </div>           
                 </div>
-                <br>
-                <p>Zoref Graphic Arts &copy; twentyeighteen</p>
-                <br><br>
-              </footer>
+
+                <div class="webTemplates food">
+                  <div class="post">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5bd0c767410545.Y3JvcCw5ODEsNzY4LDE3Miww.jpg" alt="">
+      
+                    <div class="post-s">
+                        <div class="button">
+                            <a href="#">VIEW</a>
+                        </div>
+                  </div>
+                </div>           
+              </div>
+
+              <div class="webTemplates food">
+                <div class="post">
+                  <img src="https://mir-s3-cdn-cf.behance.net/projects/202/c4396964286447.Y3JvcCwxMTQ4LDg5OSw2NSw3Nzc.jpg" alt="">
+    
+                  <div class="post-s">
+                      <div class="button">
+                          <a href="#">VIEW</a>
+                      </div>
+                </div>
+              </div>           
+            </div>
+
+            <div class="webTemplates food">
+              <div class="post">
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/202/c4396964286447.Y3JvcCwxMTQ4LDg5OSw2NSw3Nzc.jpg" alt="">
+  
+                <div class="post-s">
+                    <div class="button">
+                        <a href="#">VIEW</a>
+                    </div>
+              </div>
+            </div>           
+          </div>
+            
+                  <!-- <div class="logos drawings">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/be4b9728308865.55b92edb950fc.jpg" alt="image">
+                  </div>
+            
+                  <div class="webTemplates">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/12963199.548365055868a.png" alt="image">
+                  </div>
+            
+                  <div class="ui">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/20342607.5434c04b49254.png" alt="image">
+                  </div>
+            
+                  <div class="drawings">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/b11bbb26474383.555f91fd42584.jpg" alt="image">
+                  </div>
+            
+                  <div class="webTemplates">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/14385875.548573dae7a09.jpg" alt="image">
+                  </div>
+            
+                  <div class="drawings">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/14569777.5485b3876a1b9.png" alt="image">
+                  </div>
+                  <div class="logos">
+                    <img src=" https://mir-s3-cdn-cf.behance.net/projects/202/1d854a24500155.5505cccd057a4.jpg" alt="image">
+                  </div>
+                  <div class="ui">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/f9b95b26406487.555cc1fded76f.jpg" alt="image">
+                  </div>
+                  
+                  <div class="logos">
+                    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/181a7b35469661.Y3JvcCw3NjUsNTk5LDY3LDA.png" alt="image">
+                  </div> -->
+                  
+                 
+                </div>
+              </div>
+            </div>
+        </div>
+        <footer>
+            <br>
+            
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="row">
+                      <h3>Contact Information</h3>
+                  </div>
+                  <div class="row">mferozghauri@gmail.com</div>
+                  <div class="row">+92 334 3733156</div>
+                </div>
+                <div class="col-xs-6" id="followme">
+                  <div class="row"><h3>Follow Me</h3></div>
+                  <div class="row"><a href="https://www.facebook.com/ferozghauri" class="fa fa-facebook"></a><a href="https://www.behance.net/mferozghaubea4" class="fa fa-behance"></a></div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <p>Zoref Graphic Arts &copy; twentyeighteen</p>
+            <br><br>
+          </footer>
+
+  
 
         
     </body>
     <script>
-        // Smooth Scroll on clicking nav items
-$('nav a').click(function () {
-  var $href = $(this).attr('href');
-  $('body').stop().animate({
-    scrollTop: $($href).offset().top
-  }, 1000);
-  return false;
-});
 
-// back to top
-$('#toTop a').click(function () {
-  $('body').animate({
-    scrollTop: 0
-  }, 1000);
-  return false;
-});
-
-// Parallaxing + add class active on scroll
-$(document).scroll(function () {
-  
-  // parallaxing
-  var $movebg = $(window).scrollTop() * -0.3;
-  $('.portion').css('background-positionY', ($movebg) + 'px');
-
-  // add class active to nav a on scroll
-  // var scrollPos = $(document).scrollTop() + 100;
-  // $('nav a').each(function () {
-  //   var currLink = $(this);
-  //   var refElement = $(currLink.attr("href"));
-  //   if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-  //     $('nav a').removeClass("active");
-  //     currLink.addClass("active");
-  //   }
-  // });
-  
-  // changing padding of nav a on scroll
-    // if (scrollPos > 50) {
-    //   $('nav').css({"background": "black"});
-    //   $('nav a').addClass('small');
-    //   $('nav img').addClass('move');
-    //   $('nav span').removeClass('movetext');
-    // } else {
-    //   $('nav').css({"background": "rgba(0,0,0,0)"});
-    //   $('nav a').removeClass('small');
-    //   $('nav img').removeClass('move');
-    //   $('nav span').addClass('movetext');
-    // }
-  
-});
 
 
     </script>
+
+
+<script>
+    $(window).ready(function(){
+      $("#kutta").click(function(){
+        alert("kutte ka bacha");
+      });
+var $container = $('.portfolioContainer');
+$container.isotope({
+filter: '*',
+animationOptions: {
+  duration: 750,
+  easing: 'linear',
+  queue: false
+}
+});
+
+$('.portfolioFilter a').click(function(){
+$('.portfolioFilter .current').removeClass('current');
+$(this).addClass('current');
+
+var selector = $(this).attr('data-filter');
+$container.isotope({
+  filter: selector,
+  animationOptions: {
+      duration: 750,
+      easing: 'linear',
+      queue: false
+  }
+});
+return false;
+}); 
+});
+
+</script>
 </html>
